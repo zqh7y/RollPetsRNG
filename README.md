@@ -1,7 +1,37 @@
+<p align="center">
+  <img src=".github/assets/banner.png" alt="Roll Pets RNG, a pet RNG game on Roblox" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Roblox-released-0b0b0c?style=flat-square&logo=roblox&logoColor=white" alt="Released on Roblox">
+  <img src="https://img.shields.io/badge/Luau-63%20files-0b0b0c?style=flat-square&logo=lua&logoColor=white" alt="Luau">
+  <img src="https://img.shields.io/badge/Rojo-7.7-0b0b0c?style=flat-square" alt="Rojo 7.7">
+  <img src="https://img.shields.io/badge/tested-offline%20sim-d4ff3a?style=flat-square" alt="Tested with an offline simulator">
+</p>
+
 # Roll Pets RNG
 
 A solo pet RNG game on Roblox. Hit **ROLL**, see what pet you get, chase the
 rare ones and climb the global **Most Rolls** leaderboard.
+
+The whole game is written in code, in Luau, and synced into Roblox Studio with
+[Rojo](https://rojo.space). It's released on Roblox, and this README goes
+through everything in it.
+
+**At a glance**
+
+- **100 animals**, with odds from 1 in 2 all the way to 1 in 660Qn, and three
+  sizes: Normal, Huge (1 in 100, 10x power) and Titanic (1 in 1,000, 100x power).
+- **The server rolls first**, and the client only plays the reveal, so a roll
+  can't be faked from the player's side.
+- **Living enemies**: the coins in every world are characters that jump around,
+  and your pets fight them for you.
+- Huge and Titanic pulls get a **bush cutscene** before the reveal.
+- **Worlds, levels, upgrades and rebirths**, balanced with a Python economy
+  simulator (`tools/economy/simulate.py`).
+- An **offline test harness** (`tools/sim`) runs the whole server on a mock
+  Roblox and plays the game as a fake player, so most bugs are caught before
+  Studio is even opened.
 
 ## How it plays
 
